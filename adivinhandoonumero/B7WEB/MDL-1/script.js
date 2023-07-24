@@ -1,15 +1,74 @@
-let nota1 = 6
-let nota2 = 6
-let nota3 = 6
-let nota4 = 6
-let media = (nota1 + nota2 + nota3 + nota4) / 4
-console.log(media)
+function prcImvl() {
+   let m2 = 3000
+   let preco = 0;
 
-if (media >= 7){
-    console.log("APROVADO!")
+   switch (quartos) {
+        case 1: 
+        default:
+            preco = metragem * m2;
+            break;
+        case 2:
+            preco = metragem * (m2 * 1.2);
+            break;
+        case 3:
+            preco = metragem * (m2 * 1.5);
+            break;   
+   }
+   return preco;
+}
+let metragem = 58;
+let quartos = 4;
+let preco = prcImvl(metragem, quartos);
+console.log (`A minha casa custa R$${preco}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function validar(usuario, senha){
+    if (usuario === 'guilhermim' && senha === 'guilherme') {
+        return true;
+    } else {
+        return false;
+    }
+    
+
+}
+
+let usuario = 'adrn123';
+let senha = 'guilherme';
+let validacao = validar(usuario, senha);
+
+if (validacao) {
+    console.log ('Acesso concedido.');
+    
 } else {
-    console.log('REPROVADO')
+    console.log ('Acesso negado.')
+    
 }
 
 
+
+
+
+
+
+
+
+
+
+const sobrenome = sob => 'Guilherme ' + sob;
+
+console.log (sobrenome('Carvalho'))
 

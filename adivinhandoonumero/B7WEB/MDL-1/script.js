@@ -50,25 +50,5 @@ let usuario = 'adrn123';
 let senha = 'guilherme';
 let validacao = validar(usuario, senha);
 
-if (validacao) {
-    console.log ('Acesso concedido.');
-    
-} else {
-    console.log ('Acesso negado.')
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-const sobrenome = sob => 'Guilherme ' + sob;
-
-console.log (sobrenome('Carvalho'))
-
+let carros = ['BMW', 'Ferrari', 'Mercedes'];
+let x = 
